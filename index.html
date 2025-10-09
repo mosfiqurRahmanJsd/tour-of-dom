@@ -26,13 +26,13 @@
                 <li>Bonobas</li>
             </ul>
         </section>
-        <section>
+        <section id="fruits">
             <h1 id="fruits-title">Fruits I Like</h1>
             <ul>
                 <li>Mango</li>
-                <li>Jackfruit</li>
+                <li class="favorite">Jackfruit</li>
                 <li>Apple</li>
-                <li>PineApple</li>
+                <li class="favorite">PineApple</li>
             </ul>
         </section>
     </main>
@@ -53,8 +53,21 @@
         // }
 
 
-        const fruits = document.getElementById('fruits-title'); 
-        console.log(fruits.innerText); 
+        // const fruits = document.getElementById('fruits-title'); 
+        // // console.log(fruits.innerText); 
+        // fruits.innerText = 'Fruit change by JS'; 
+
+
+        // const favoriteFruit = document.getElementsByClassName('favorite'); 
+        
+        // for(const fruit of favoriteFruit) {
+        //     console.log(fruit); 
+        // }
+
+        const fruits = document.querySelectorAll('#fruits li'); 
+        for(const li of fruits) {
+            console.log(li.innerText); 
+        }
 
     </script>
 </body>
